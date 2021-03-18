@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Data } from "./AccordionData";
 import picture3 from "../assets/icon-arrow-down.svg";
 const AccordionSection = styled.div`
-  margin-left: 24.5vw;
+  margin-left: 25.5vw;
   max-width: 350px;
   width: 350px;
   display: flex;
