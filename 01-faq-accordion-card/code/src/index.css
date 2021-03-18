@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v3/@CgwKCkt1bWJoIFNhbnMQCSAFOAE=.woff2)
+    format("woff2");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +19,5 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  padding: 0;
 }

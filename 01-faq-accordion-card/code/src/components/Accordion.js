@@ -3,14 +3,16 @@ import styled from "styled-components";
 import { Data } from "./AccordionData";
 import picture3 from "../assets/icon-arrow-down.svg";
 const AccordionSection = styled.div`
-  margin: 20vh 0 0 50vh;
+  margin-left: 24.5vw;
+  max-width: 350px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 50vh;
-  width: 20vw;
+  height: 30vh;
+  width: 35vw;
 `;
 
 const Container = styled.div`
@@ -28,12 +30,14 @@ const Wrap = styled.div`
   align-items: center;
 `;
 
-const ArrowDown = styled.img``;
+const ArrowDown = styled.img`
+  margin-left: 45px;
+`;
 
 const Dropdown = styled.div`
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid hsl(240, 5%, 91%);
 `;
 
 const Accordion = () => {
@@ -46,7 +50,7 @@ const Accordion = () => {
     setClicked(index);
   };
 
-  return (
+  return ( // TODO: ADD BOLD STYLE ON HOVER
     <AccordionSection>
       <Container>
         {Data.map((item, index) => {
@@ -56,11 +60,18 @@ const Accordion = () => {
                 onClick={() => toggle(index)}
                 key={index}
                 style={{
-                  borderBottom: "2px solid hsl(240, 5%, 91%)",
-                  marginTop: "5px",
+                  borderBottom: "1px solid hsl(240, 5%, 91%)",
+                  marginTop: "15px",
                 }}
               >
-                <h1 style={{ fontSize: "18px", color: "hsl(237, 12%, 33%)" }}>
+                <h1
+                  style={{
+                    fontSize: "14px",
+                    color: "hsl(237, 12%, 33%)",
+                    fontFamily: "Kumbh Sans, sans-serif",
+                    fontWeight: "500"
+                  }}
+                >
                   {item.question}
                 </h1>
                 <span style={{}}>
@@ -77,7 +88,7 @@ const Accordion = () => {
               </Wrap>
               {clicked === index ? (
                 <Dropdown>
-                  <p style={{ fontSize: "15px", color: "hsl(240, 6%, 50%)" }}>
+                  <p style={{ fontSize: "14px", color: "hsl(240, 6%, 50%)", fontFamily: "Kumbh Sans, sans-serif" }}>
                     {item.answer}
                   </p>
                 </Dropdown>
