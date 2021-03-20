@@ -4,15 +4,13 @@ import { Data } from "./AccordionData";
 import picture3 from "../assets/icon-arrow-down.svg";
 const AccordionSection = styled.div`
   margin-left: 25.5vw;
-  max-width: 350px;
-  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   height: 30vh;
-  width: 35vw;
+  width: 18.5vw;
 `;
 
 const Container = styled.div`
@@ -31,13 +29,14 @@ const Wrap = styled.div`
 `;
 
 const ArrowDown = styled.img`
-  margin-left: 45px;
+  margin-left: 3vw;
+  width: 0.5vw;
 `;
 
 const Dropdown = styled.div`
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid hsl(240, 5%, 91%);
+  border-bottom: 0.1vh solid hsl(240, 5%, 91%);
 `;
 
 const Accordion = () => {
@@ -60,16 +59,16 @@ const Accordion = () => {
                 onClick={() => toggle(index)}
                 key={index}
                 style={{
-                  borderBottom: "1px solid hsl(240, 5%, 91%)",
-                  marginTop: "15px",
+                  borderBottom: "0.1vh solid hsl(240, 5%, 91%)",
+                  marginTop: "2vh",
                 }}
               >
                 <h1
                   style={{
-                    fontSize: "14px",
+                    fontSize: "1.6vh",
                     color: "hsl(237, 12%, 33%)",
                     fontFamily: "Kumbh Sans, sans-serif",
-                    fontWeight: "500"
+                    fontWeight: "400"
                   }}
                 >
                   {item.question}
@@ -88,7 +87,7 @@ const Accordion = () => {
               </Wrap>
               {clicked === index ? (
                 <Dropdown>
-                  <p style={{ fontSize: "14px", color: "hsl(240, 6%, 50%)", fontFamily: "Kumbh Sans, sans-serif" }}>
+                  <p style={{ fontSize: "1.5vh", color: "hsl(240, 6%, 50%)"}}>
                     {item.answer}
                   </p>
                 </Dropdown>

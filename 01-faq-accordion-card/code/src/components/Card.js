@@ -8,10 +8,10 @@ import Accordion from "./Accordion";
 const CardBody = styled.div`
   margin: 20vh 0;
   background-color: #fff;
-  border-radius: 25px;
+  border-radius: 1.5vw;
   width: 50vw;
   height: 55vh;
-  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  box-shadow: 0px 5vw 5vw -2vh rgba(53, 18, 122, 0.497159);
 `;
 
 const ImgBg = styled.img`
@@ -20,13 +20,14 @@ const ImgBg = styled.img`
   top: -30vh;
   left: -30vw;
   z-index: 1;
+  width: 50.5vw;
 `;
 
 const ImgContainer = styled.div`
   float: left;
   position: relative;
   margin-bottom: 5vh;
-  width: 50%;
+  width: 45%;
   height: 100%;
   display: block;
   overflow: hidden;
@@ -36,13 +37,14 @@ const Img1 = styled.img`
   margin-left: -4.5vw;
   margin-top: 8vh;
   z-index: 2;
+  width: 25vw;
 `;
 
 const FAQTitle = styled.h1`
-  // TODO FIX FONT
+  font-size: 4.5vh;
   display: flex;
   text-align: right;
-  margin-left: 26vw;
+  margin-left: 25.5vw;
   padding-top: 7.5vh;
   position: relative;
 `;
@@ -54,12 +56,13 @@ const Img2 = styled.img`
   top: -12vw;
   z-index: 3;
   animation: 3s float ease-in-out infinite;
+  width: 10vw;
   @keyframes float {
     0% {
       transform: translatey(0px);
     }
     50% {
-      transform: translatey(-20px);
+      transform: translatey(-2vh);
     }
     100% {
       transform: translatey(0px);
