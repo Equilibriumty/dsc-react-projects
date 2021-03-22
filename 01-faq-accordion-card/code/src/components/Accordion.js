@@ -19,9 +19,6 @@ const Container = styled.div`
 `;
 
 const Wrap = styled.div`
-  &:hover {
-    color: hsl(14, 88%, 65%);
-  }
   display: flex;
   cursor: pointer;
   justify-content: space-between;
@@ -68,7 +65,10 @@ const Accordion = () => {
                     fontSize: "1.6vh",
                     color: "hsl(237, 12%, 33%)",
                     fontFamily: "Kumbh Sans, sans-serif",
-                    fontWeight: "400"
+                    fontWeight: "400",
+                    "&::hover": {
+                      color: "red"
+                    } 
                   }}
                 >
                   {item.question}

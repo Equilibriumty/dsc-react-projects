@@ -15,11 +15,9 @@ const CardBody = styled.div`
 `;
 
 const ImgBg = styled.img`
-  // TODO: FIX BG IMAGE
   position: absolute;
   top: -30vh;
   left: -30vw;
-  z-index: 1;
   width: 50.5vw;
 `;
 
@@ -47,14 +45,16 @@ const FAQTitle = styled.h1`
   margin-left: 25.5vw;
   padding-top: 7.5vh;
   position: relative;
+  font-weight: 700;
+`;
+
+const BoxImgContainer = styled.div`
+  position: absolute;
+  top: 42.5vh;
+  left: 20.2vw;
 `;
 
 const Img2 = styled.img`
-  display: inline-block;
-  position: relative;
-  left: -5vw;
-  top: -12vw;
-  z-index: 3;
   animation: 3s float ease-in-out infinite;
   width: 10vw;
   @keyframes float {
@@ -76,8 +76,10 @@ export const Card = () => {
       <ImgContainer>
         <ImgBg src={bg}></ImgBg>
         <Img1 src={picture1}></Img1>
-        <Img2 src={picture2}></Img2>
       </ImgContainer>
+      <BoxImgContainer>
+        <Img2 src={picture2}></Img2>
+      </BoxImgContainer>
       <FAQTitle>FAQ</FAQTitle>
       <Accordion></Accordion>
     </CardBody>
