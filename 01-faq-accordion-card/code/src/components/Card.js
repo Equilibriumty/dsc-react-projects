@@ -34,7 +34,6 @@ const ImgContainer = styled.div`
 const Img1 = styled.img`
   margin-left: -4.5vw;
   margin-top: 8vh;
-  z-index: 2;
   width: 25vw;
 `;
 
