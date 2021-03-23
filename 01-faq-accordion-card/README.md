@@ -8,7 +8,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://faq-accordion-card-omega-three.vercel.app/)
 
 ### Built with
 - [React](https://reactjs.org/) - JS library
