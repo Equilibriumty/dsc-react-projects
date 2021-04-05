@@ -1,12 +1,9 @@
 import React from 'react'
 import Card from './components/Card';
 
-
-
 export const App = () => {
-  return (
-      <Card/>
-  );
+  return <Card/>
+  
 }
 
 export default App;
