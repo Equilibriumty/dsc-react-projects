@@ -1,0 +1,6 @@
+.header-body {
+  background-image: url("../images/pattern-bg.png");
+  background-size: cover;
+  height: 35vh;
+  overflow: hidden;
+}
