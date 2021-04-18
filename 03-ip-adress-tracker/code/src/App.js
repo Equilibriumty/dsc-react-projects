@@ -2,6 +2,7 @@ import "./App.css";
 import { Header } from "./components/Header";
 import { Map } from "./components/Map";
 import { useEffect } from "react";
+import Info from "./components/Info";
 
 function App() {
   const ip = "46.219.209.158";
@@ -24,6 +25,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Info />
       <Map />
     </div>
   );
