@@ -8,10 +8,9 @@ import {
   QuestionTitle,
   AnswerTitle,
 } from "./styles/styles";
-import { Data } from "./AccordionData";
 import picture3 from "../assets/icon-arrow-down.svg";
 
-const Accordion = () => {
+const Accordion = ({ items }) => {
   const [clicked, setClicked] = useState(false);
 
   const toggle = (index) => {
@@ -24,7 +23,7 @@ const Accordion = () => {
   return (
     <AccordionSection>
       <Container>
-        {Data.map((item, index) => {
+        {items.map((item, index) => {
           return (
             <>
               <Wrap onClick={() => toggle(index)} key={index}>

@@ -12,6 +12,7 @@ import bg from "../assets/bg-pattern-desktop.svg";
 import picture1 from "../assets/illustration-woman-online-desktop.svg";
 import picture2 from "../assets/illustration-box-desktop.svg";
 import Accordion from "./Accordion";
+import { Data } from "./AccordionData";
 
 const Card = () => {
   return (
@@ -24,7 +25,7 @@ const Card = () => {
         <Img2 src={picture2}></Img2>
       </BoxImgContainer>
       <FAQTitle>FAQ</FAQTitle>
-      <Accordion></Accordion>
+      <Accordion items={Data}></Accordion>
     </CardBody>
   );
 };
