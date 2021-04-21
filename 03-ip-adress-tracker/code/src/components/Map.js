@@ -1,10 +1,11 @@
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-export const Map = () => {
+export const Map = (props) => {
+  console.log(props.location.lat, props.location.lng);
   return (
     <MapContainer
-      center={[51.505, -0.09]}
+      center={[0, 0]}
       zoom={13}
       scrollWheelZoom={false}
       style={{ height: "65vh" }}
