@@ -1,8 +1,11 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
+import { useState } from "react";
+import LocationMarker from "./LocationMarker"
+
 
 export const Map = (props) => {
-  if(props.location.lng === undefined && props.location.lat === undefined){
+
+  if(props.location.lng == 0 && props.location.lat == 0){
     return <div>qq</div>
   }
   return (
@@ -13,11 +16,7 @@ export const Map = (props) => {
       style={{ height: "65vh" }}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={[props.location.lat, props.location.lng]}>
-        <Popup>
-        Your place
-        </Popup>
-      </Marker>
+      <LocationMarker location={[props.location.lat, props.location.lng]}/>
     </MapContainer>
   );
 };
